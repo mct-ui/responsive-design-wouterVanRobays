@@ -191,6 +191,35 @@ a:focus {
 \*------------------------------------*/
 
 /*
+    Objects: section
+    ---
+    Creates vertical whitespace between adjacent sections inside a row
+*/
+
+.o-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.o-section + .o-section {
+    margin-top: 24px;
+}
+
+@media (min-width: 768px) {
+    .o-section--lg + .o-section--lg,
+    .o-section--xl + .o-section--xl {
+        margin-top: 48px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .o-section--xl + .o-section--xl {
+        margin-top: 72px;
+    }
+}
+
+
+/*
     Objects: Row
     ---
     Creates a horizontal row that stretches the viewport and adds padding around children
@@ -215,6 +244,10 @@ a:focus {
         padding-right: 48px;
     }
 
+    .o-row-md {
+        padding-top: 48px;
+        padding-bottom: 24px;
+    }
     .o-row--lg {
         padding-top: 72px;
         padding-bottom: 48px;
@@ -431,6 +464,27 @@ a:focus {
 @media (min-width: 768px) {
     .c-logo {
         height: 40px;
+    }
+}
+
+/*
+    Component: header
+    ---
+    Main header of the website
+*/
+
+.c-header__nav {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .c-header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .c-header__nav {
+        display: block;
     }
 }
 
@@ -667,6 +721,17 @@ a:focus {
         width: 83.3333333333% !important;
     }
 }
+
+/*
+    Utilities: spacing
+    ---
+    Utility classes to put specific margins and paddings onto elements
+*/
+
+.u-pt-clear {
+    padding-top: 0 !important;
+}
+
 
 /*------------------------------------*\
   #MEDIA
