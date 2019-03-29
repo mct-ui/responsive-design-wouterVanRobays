@@ -16,7 +16,7 @@ html {
     font-size: 16px;
     line-height: 1.5;
     font-family: Helvetica, arial, sans-serif;
-    color: #111;
+    color: #202024;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -36,7 +36,7 @@ html {
  */
 
 ::selection {
-    background: #e85e00;
+    background: #5051DB;
     color: white;
     text-shadow: none;
 }
@@ -66,6 +66,7 @@ h1 {
     font-size: 36px;
     line-height: 48px;
     margin: 0 0 24px;
+    color: #5051DB;
 }
 
 h2 {
@@ -136,18 +137,18 @@ hr {
 }
 
 a {
-    color: RoyalBlue;
     transition: all .1s ease-in-out;
+    color: #5051DB;
 }
 
 a:visited,
 a:active {
-    color: BlueViolet;
+    color: #5051DB;
 }
 
 a:hover,
 a:focus {
-    color: Crimson;
+    color: #3E3EA8;
 }
 
 /*------------------------------------*\
