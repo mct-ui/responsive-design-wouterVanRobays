@@ -254,6 +254,11 @@ a:focus {
     }
 }
 
+/* bg color modifier */
+.o-row--gr{
+    background-color: #F7F7F7;
+}
+
 /*
     Objects: Container
     ---
